@@ -41,7 +41,7 @@ class _NavigationState extends State<Navigation> {
         },
         iconSize: 30,
         // Colouring
-        selectedItemColor: legalCoverYellow,
+        selectedItemColor: legalCoverRed,
         unselectedItemColor: legalCoverBlack,
         backgroundColor: surfaceWhite,
         // Labels visibility
@@ -57,13 +57,13 @@ class _NavigationState extends State<Navigation> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.location_pin,
+              Icons.warning_rounded,
             ),
             label: 'Find Me',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.warning_rounded,
+              Icons.call,
             ),
             label: 'Emergency',
           ),

@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30.0),
                           image: DecorationImage(
                               image: AssetImage('images/LegalCoverCard.png'),
-                              fit: BoxFit.fitHeight),
+                              fit: BoxFit.fill),
                           boxShadow: [
                             BoxShadow(
                               color: legalCoverBlackVar,

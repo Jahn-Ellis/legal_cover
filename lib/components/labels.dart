@@ -80,7 +80,7 @@ class CardDataHeadingLabel extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Text(
         label,
-        style: legalCoverRobotoBlack,
+        style: legalCoverRobotoWhite,
       ),
     );
   }

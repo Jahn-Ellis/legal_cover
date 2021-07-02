@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:legal_cover/constants.dart';
 import 'package:legal_cover/components/labels.dart';
 
+import 'package:provider/provider.dart';
+import 'package:legal_cover/model/user_data_handler.dart';
+
 class TermsOfUseAccept extends StatefulWidget {
   @override
   _TermsOfUseAcceptState createState() => _TermsOfUseAcceptState();
@@ -20,6 +23,8 @@ class _TermsOfUseAcceptState extends State<TermsOfUseAccept> {
           toggleCheckboxState: (bool newValue) {
             setState(() {
               isChecked = newValue;
+              Provider.of<UserDataHandler>(context, listen: false)
+                  .updateTerms(newValue);
             });
           },
         ),
@@ -38,7 +43,7 @@ class TermsOfUseCheckbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Checkbox(
-      activeColor: legalCoverYellow,
+      activeColor: legalCoverRed,
       value: checkboxState,
       onChanged: toggleCheckboxState,
     );

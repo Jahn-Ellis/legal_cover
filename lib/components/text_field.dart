@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:legal_cover/constants.dart';
 
-import 'package:provider/provider.dart';
-import 'package:legal_cover/model/user_data_handler.dart';
-
 class TextFieldInput extends StatelessWidget {
   TextFieldInput({@required this.hint});
 
@@ -30,10 +27,7 @@ class TextFieldInput extends StatelessWidget {
               contentPadding: EdgeInsets.all(15),
               border: InputBorder.none,
             ),
-            onChanged: (value) {
-              Provider.of<UserDataHandler>(context, listen: false)
-                  .updateName(value);
-            },
+            onChanged: (value) {},
           ),
         ),
       ),

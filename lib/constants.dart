@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
+// Email Credentials
+const String EMAIL = 'legalcoversos@gmail.com';
+const String PASSWORD = 'Monterrey01!';
+const String RECIPIENT = 'sos@legalcover.co.za';
+
+// Code
+const String legalCoverPin = '81171';
+
 // Yellows
-const Color legalCoverYellow = Color(0xFFFFD400);
+const Color legalCoverYellow = Color(0xFFFFEC00);
 const Color legalCoverYellowVar = Color(0xFFFFEA80);
 
 // Blacks
@@ -9,7 +17,7 @@ const Color legalCoverBlack = Color(0xFF151515);
 const Color legalCoverBlackVar = Color(0xFF8A8A8A);
 
 // Reds
-const Color legalCoverRed = Color(0xFFD33E43);
+const Color legalCoverRed = Color(0xFFE20613);
 const Color legalCoverRedVar = Color(0xFFE99FA2);
 
 // Whites
