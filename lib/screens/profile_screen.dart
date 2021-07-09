@@ -50,40 +50,39 @@ class ProfileScreen extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                            vertical: 10.0),
-                                        child: ElevatedButton(
-                                          onPressed: () {
-                                            Navigator.pushReplacementNamed(
-                                                context, LoadingScreenLogin.id);
-                                            Provider.of<UserDataHandler>(
-                                                    context,
-                                                    listen: false)
-                                                .updateLogin(false);
-                                          },
-                                          child: Text(
-                                            'Log out',
-                                            style: legalCoverRobotoWhite,
-                                          ),
-                                          style: ElevatedButton.styleFrom(
-                                            primary: legalCoverRed,
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 50, vertical: 10),
-                                            textStyle: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(30),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.symmetric(
+                                      //       vertical: 10.0),
+                                      //   child: ElevatedButton(
+                                      //     onPressed: () {
+                                      //       Navigator.pushReplacementNamed(
+                                      //           context, LoadingScreenLogin.id);
+                                      //       Provider.of<UserDataHandler>(
+                                      //               context,
+                                      //               listen: false)
+                                      //           .updateLogin(false);
+                                      //     },
+                                      //     child: Text(
+                                      //       'Log out',
+                                      //       style: legalCoverRobotoWhite,
+                                      //     ),
+                                      //     style: ElevatedButton.styleFrom(
+                                      //       primary: legalCoverRed,
+                                      //       padding: EdgeInsets.symmetric(
+                                      //           horizontal: 50, vertical: 10),
+                                      //       textStyle: TextStyle(
+                                      //         fontSize: 16,
+                                      //         fontWeight: FontWeight.bold,
+                                      //       ),
+                                      //       shape: RoundedRectangleBorder(
+                                      //         borderRadius:
+                                      //             BorderRadius.circular(30),
+                                      //       ),
+                                      //     ),
+                                      //   ),
+                                      // ),
                                       IconButton(
                                         icon: Icon(Icons.edit),
                                         tooltip: 'Edit User Information',

@@ -9,7 +9,7 @@ const String RECIPIENT = 'sos@legalcover.co.za';
 const String legalCoverPin = '81171';
 
 // Yellows
-const Color legalCoverYellow = Color(0xFFFFEC00);
+const Color legalCoverYellow = Color(0xFFE4D300);
 const Color legalCoverYellowVar = Color(0xFFFFEA80);
 
 // Blacks
@@ -17,7 +17,7 @@ const Color legalCoverBlack = Color(0xFF151515);
 const Color legalCoverBlackVar = Color(0xFF8A8A8A);
 
 // Reds
-const Color legalCoverRed = Color(0xFFE20613);
+const Color legalCoverRed = Color(0xFFB83634);
 const Color legalCoverRedVar = Color(0xFFE99FA2);
 
 // Whites

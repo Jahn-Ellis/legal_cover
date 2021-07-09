@@ -33,13 +33,13 @@ class EmergencyScreen extends StatelessWidget {
             actionLabel: 'Call',
             number: '112',
           ),
-          PageTitleLabel(title: 'Contact Cover Legal'),
+          PageTitleLabel(title: 'Contact Legal Cover'),
           CallCard(
             picture: 'Phone',
             heading: 'Phone',
             subHeading: 'Speak to an agent',
             actionLabel: 'Call',
-            number: '086 123 7779',
+            number: '0614097575',
           ),
           EmailCard(
             picture: 'Email',
