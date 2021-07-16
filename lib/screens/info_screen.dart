@@ -17,7 +17,7 @@ class InfoScreen extends StatelessWidget {
   String name = 'not valid';
   String surname = 'not valid';
   String idNum = 'not valid';
-  String dob = 'not valid';
+  // String dob = 'not valid';
   String contactNum = 'not valid';
   String email = 'not valid';
 
@@ -129,37 +129,37 @@ class InfoScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // TextFieldInput(hint: 'Date of Birth'),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 10.0),
-                      child: Container(
-                        alignment: Alignment.center,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            border: Border.all(
-                              width: 1,
-                              color: legalCoverBlack,
-                              style: BorderStyle.solid,
-                            ),
-                          ),
-                          child: TextField(
-                            decoration: InputDecoration(
-                              hintText: 'Date of Birth (DD/MM/YY)',
-                              contentPadding: EdgeInsets.all(15),
-                              border: InputBorder.none,
-                            ),
-                            onChanged: (value) {
-                              dob = value;
-                              Provider.of<UserDataHandler>(context,
-                                      listen: false)
-                                  .updateDob(value);
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
+                    // TextFieldInput(hint: 'Date of Birth') -----> removed,
+                    // Padding(
+                    //   padding: const EdgeInsets.symmetric(
+                    //       horizontal: 20.0, vertical: 10.0),
+                    //   child: Container(
+                    //     alignment: Alignment.center,
+                    //     child: Container(
+                    //       decoration: BoxDecoration(
+                    //         borderRadius: BorderRadius.circular(30),
+                    //         border: Border.all(
+                    //           width: 1,
+                    //           color: legalCoverBlack,
+                    //           style: BorderStyle.solid,
+                    //         ),
+                    //       ),
+                    //       child: TextField(
+                    //         decoration: InputDecoration(
+                    //           hintText: 'Date of Birth (DD/MM/YY)',
+                    //           contentPadding: EdgeInsets.all(15),
+                    //           border: InputBorder.none,
+                    //         ),
+                    //         onChanged: (value) {
+                    //           dob = value;
+                    //           Provider.of<UserDataHandler>(context,
+                    //                   listen: false)
+                    //               .updateDob(value);
+                    //         },
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                     // TextFieldInput(hint: 'Contact Number'),
                     Padding(
                       padding: const EdgeInsets.symmetric(
@@ -232,14 +232,14 @@ class InfoScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           child: ElevatedButton(
                             onPressed: () {
-                              if (!RegExp(r"^([a-zA-Z]{2,20})$")
+                              if (!RegExp(r"^([a-zA-Z-]{2,20})$")
                                       .hasMatch(name) ||
                                   name == 'not valid') {
                                 showDialog<String>(
                                     context: context,
                                     builder: (BuildContext context) =>
                                         NameErrorDialogBox());
-                              } else if (!RegExp(r"^([a-zA-Z]{2,30})$")
+                              } else if (!RegExp(r"^([a-zA-Z ]{2,30})$")
                                       .hasMatch(surname) ||
                                   surname == 'not valid') {
                                 showDialog<String>(
@@ -254,13 +254,14 @@ class InfoScreen extends StatelessWidget {
                                     context: context,
                                     builder: (BuildContext context) =>
                                         IdNumErrorDialogBox());
-                              } else if (!RegExp(r"^([0-9/]{8})$")
-                                      .hasMatch(dob) ||
-                                  dob == 'not valid') {
-                                showDialog<String>(
-                                    context: context,
-                                    builder: (BuildContext context) =>
-                                        DobErrorDialogBox());
+                                // Dob Removed
+                                // } else if (!RegExp(r"^([0-9/]{8})$")
+                                //         .hasMatch(dob) ||
+                                //     dob == 'not valid') {
+                                //   showDialog<String>(
+                                //       context: context,
+                                //       builder: (BuildContext context) =>
+                                //           DobErrorDialogBox());
                               } else if (!RegExp(r"^([0-9]{10})$")
                                       .hasMatch(contactNum) ||
                                   contactNum == 'not valid') {

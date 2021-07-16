@@ -62,7 +62,7 @@ class FindMeScreen extends StatelessWidget {
       ..recipients.add(RECIPIENT)
       // ..ccRecipients.addAll(['destCc1@example.com', 'destCc2@example.com'])
       // ..bccRecipients.add(Address('bccAddress@example.com'))
-      ..subject = '${name} ${surname} requiers legal assistance!'
+      ..subject = '${name} ${surname} requires legal assistance!'
       ..text =
           '${name} ${surname} has requested legal assistance via the Legal Cover Find Me function.\n\nUser Details\n${name}\n${surname}\n${idNum}\n${contactNum}\n${email}\n\nClick below link for last known location:\n${location}';
     // ..html = "<h1>Test</h1>\n<p>Hey! Here's some HTML content</p>";

@@ -113,12 +113,12 @@ class ProfileScreen extends StatelessWidget {
                                 ProfileUserDetailsLabel(
                                   details: '${userDataHandler.userData.idNum}',
                                 ),
-                                ProfileDataHeadingLabel(
-                                  label: 'Date of Birth',
-                                ),
-                                ProfileUserDetailsLabel(
-                                  details: '${userDataHandler.userData.dob}',
-                                ),
+                                // ProfileDataHeadingLabel(
+                                //   label: 'Date of Birth',
+                                // ),
+                                // ProfileUserDetailsLabel(
+                                //   details: '${userDataHandler.userData.dob}',
+                                // ),
                                 ProfileDataHeadingLabel(
                                   label: 'Contact Number',
                                 ),

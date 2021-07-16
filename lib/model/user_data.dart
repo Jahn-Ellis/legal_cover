@@ -3,7 +3,7 @@ class UserData {
     this.name,
     this.surname,
     this.idNum,
-    this.dob,
+    // this.dob,
     this.contactNum,
     this.email,
     this.loginStatus,
@@ -14,7 +14,7 @@ class UserData {
   String name;
   String surname;
   String idNum;
-  String dob;
+  // String dob;
   String contactNum;
   String email;
   bool loginStatus;

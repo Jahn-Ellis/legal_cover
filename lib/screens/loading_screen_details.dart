@@ -49,8 +49,8 @@ class _DetailHandlerState extends State<DetailHandler> {
         .updateSurname(this.preferences.getString("surname") ?? '');
     Provider.of<UserDataHandler>(context, listen: false)
         .updateIdNum(this.preferences.getString("idNum") ?? '');
-    Provider.of<UserDataHandler>(context, listen: false)
-        .updateDob(this.preferences.getString("dob") ?? '');
+    // Provider.of<UserDataHandler>(context, listen: false)
+    //     .updateDob(this.preferences.getString("dob") ?? '');
     Provider.of<UserDataHandler>(context, listen: false)
         .updateContactNum(this.preferences.getString("contactNum") ?? '');
     Provider.of<UserDataHandler>(context, listen: false)

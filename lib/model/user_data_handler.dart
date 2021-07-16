@@ -45,17 +45,17 @@ class UserDataHandler extends ChangeNotifier {
   }
 
   // Save to Shared Pref
-  void saveDob(String userDetails) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setString("dob", userDetails);
-  }
+  // void saveDob(String userDetails) async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   prefs.setString("dob", userDetails);
+  // }
 
   // Notify Listeners
-  void updateDob(String userDetails) {
-    userData.dob = userDetails;
-    saveDob(userDetails);
-    notifyListeners();
-  }
+  // void updateDob(String userDetails) {
+  //   userData.dob = userDetails;
+  //   saveDob(userDetails);
+  //   notifyListeners();
+  // }
 
   // Save to Shared Pref
   void saveContactNum(String userDetails) async {
