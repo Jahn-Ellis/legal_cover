@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 // Email Credentials
-const String EMAIL = 'legalcoversos@gmail.com';
-const String PASSWORD = 'Monterrey01!';
-const String RECIPIENT = 'sos@legalcover.co.za';
+// request .env
 
 // Code
-const String legalCoverPin = '81171';
+// request .env
 
 // Yellows
 const Color legalCoverYellow = Color(0xFFE4D300);
